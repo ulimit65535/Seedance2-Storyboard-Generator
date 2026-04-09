@@ -1,10 +1,10 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
 
 ## Repository Overview
 
-This is a Chinese-language repository for AI video production workflow combining Claude Code (script and storyboard generation), Nana Banana Pro (asset generation), and Seedance 2.0 (video generation). The workflow transforms stories and novels into multi-episode AI video series with consistent visual style and character design.
+This is a Chinese-language repository for AI video production workflow combining Codex (script and storyboard generation), Nana Banana Pro (asset generation), and Seedance 2.0 (video generation). The workflow transforms stories and novels into multi-episode AI video series with consistent visual style and character design.
 
 ## Core Workflow
 
@@ -20,7 +20,7 @@ The production process follows these steps:
 
 ```
 写剧本和分镜/
-├── .claude/skills/seedance-storyboard-generator/  # Custom skill for video script generation
+├── .agents/skills/seedance-storyboard-generator/ # Custom skill for video script generation
 ├── docs/                           # Documentation and reference materials
 │   ├── 剧本和分镜.md                 # Main workflow documentation
 │   ├── 流程.md                      # Process overview
@@ -104,15 +104,10 @@ Character differentiation uses distinct color schemes and visual markers for rec
 
 ## Skill Usage
 
-Invoke the custom skill for video script generation:
-```
-/skill seedance-storyboard-generator
-```
-
-The skill handles: story analysis, four-act script structure, asset planning, and Seedance 2.0 formatted prompts.
+Use the project skill in `.agents/skills/seedance-storyboard-generator/` for video script generation. In Codex, this skill should be used when the user asks to adapt a story, generate storyboard prompts, plan a multi-episode AI video series, or create asset prompts for characters, scenes, and props.
 
 ## Reference Documentation
 
-- `.claude/skills/seedance-storyboard-generator/SKILL.md` - Skill definition and workflow
-- `.claude/skills/seedance-storyboard-generator/references/seedance-manual.md` - Complete Seedance 2.0 manual
-- `.claude/skills/seedance-storyboard-generator/references/故事转视频脚本-转换工具.md` - Story adaptation template
+- `.agents/skills/seedance-storyboard-generator/SKILL.md` - Skill definition and workflow
+- `.agents/skills/seedance-storyboard-generator/references/seedance-manual.md` - Complete Seedance 2.0 manual
+- `.agents/skills/seedance-storyboard-generator/references/故事转视频脚本-转换工具.md` - Story adaptation template

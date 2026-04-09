@@ -1,6 +1,6 @@
 # AI 视频制作工作流
 
-基于 Claude Code + Skill + Seedance 2.0 的完整 AI 视频制作流程，专注于将小说、故事转化为多集视频系列。
+基于 Codex + Skill + Seedance 2.0 的完整 AI 视频制作流程，专注于将小说、故事转化为多集视频系列。
 
 本项目参考学习了： 《用 Seedance 2.0 做了 20 集水墨漫剧，聊聊真实体验》北极的树 闲话AI ，感谢作者。
 
@@ -12,7 +12,7 @@
 
 本项目提供了一套完整的 AI 视频制作工作流，通过三件套工具实现从故事到成片的自动化生产：
 
-- **Claude Code** - 剧本创作与分镜脚本生成
+- **Codex** - 剧本创作与分镜脚本生成
 - **Nana Banana Pro** - 角色、场景、道具素材图生成(可选其他生图ai)
 - **Seedance 2.0** - 视频生成与延长
 
@@ -34,7 +34,7 @@
 
 ```
 写剧本和分镜/
-├── .claude/skills/seedance-storyboard-generator/  # 视频脚本生成技能
+├── .agents/skills/seedance-storyboard-generator/  # 视频脚本生成技能
 ├── docs/                           # 文档和参考资料
 │   ├── 剧本和分镜.md                 # 主要工作流文档
 │   ├── 流程.md                      # 流程概述
@@ -143,19 +143,19 @@ Chinese ink wash painting style mixed with anime cel-shading
 
 ## 使用方法
 
-调用自定义技能进行视频脚本生成：
+在 Codex 中直接提出需求即可触发该技能，例如：
 
 ```
-❯ seedance   风云中聂风小时候的故事
+把《风云》中聂风小时候的故事改成 5 集 9:16 竖屏分镜
 ```
 
 该技能处理：故事分析、四幕剧本结构、素材规划和 Seedance 2.0 格式提示词。
 
 ## 参考文档
 
-- `.claude/skills/seedance-storyboard-generator/SKILL.md` - 技能定义和工作流
-- `.claude/skills/seedance-storyboard-generator/references/seedance-manual.md` - 完整的 Seedance 2.0 手册
-- `.claude/skills/seedance-storyboard-generator/references/故事转视频脚本-转换工具.md` - 故事改编模板
+- `.agents/skills/seedance-storyboard-generator/SKILL.md` - 技能定义和工作流
+- `.agents/skills/seedance-storyboard-generator/references/seedance-manual.md` - 完整的 Seedance 2.0 手册
+- `.agents/skills/seedance-storyboard-generator/references/故事转视频脚本-转换工具.md` - 故事改编模板
 
 ## 示例项目
 
